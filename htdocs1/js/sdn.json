@@ -1,0 +1,26 @@
+{
+    "sdnEntry" : {
+	"uid" : "numeric",
+	"lastName" : "string",
+	"sndType" : "Entity/ENUM",
+	"programList" : {
+	    "program" : "CUBA"
+	},
+	"akaList" : {
+	    "aka" : {
+		"uid": "numeric",
+		"type" : "",
+		"category" : "",
+		"lastName" : ""
+	    }
+	},
+	"addressList" : {
+	    "address" : {
+		"uid" : "",
+		"country" : ""
+	    }
+	}
+    }
+}
+
+  
