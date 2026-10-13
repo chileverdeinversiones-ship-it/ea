@@ -34,6 +34,8 @@ jobs:
           php-version: ${{ matrix.php-version }}
           extensions: pdo, pdo_mysql
           coverage: none
+      - name: Revisar sintaxis PHP
+        run: find src public tests -name '*.php' -print0 | xargs -0 -n1 php -l
       - name: Validar configuración Composer
         run: composer validate --no-check-publish --no-check-lock
       - name: Instalar dependencias de pruebas
